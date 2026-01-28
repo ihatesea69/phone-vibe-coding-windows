@@ -44,3 +44,14 @@ resource "aws_instance" "vibe_box" {
     Name = "VibeCoding-Windows"
   }
 }
+
+resource "local_file" "rdp_file" {
+  content  = <<EOF
+auto connect:i:1
+full address:s:${aws_instance.vibe_box.public_ip}:3389
+username:s:Administrator
+prompt for credentials:i:1
+administrative session:i:1
+EOF
+  filename = "${path.module}/VibeCoding.rdp"
+}
