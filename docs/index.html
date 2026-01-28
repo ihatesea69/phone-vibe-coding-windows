@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Vibe Coding - Cloud Windows Dev Box</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+
+    <nav>
+      <div class="logo">☁️ PhoneVibe</div>
+      <div class="links">
+        <a
+          href="https://github.com/nghidanh2005/phone-vibe-coding-windows"
+          class="btn-github"
+        >
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Code from <span class="gradient-text">Anywhere</span>.</h1>
+        <p>
+          Your instant, Terraform-managed Windows environment. Optimized for
+          Vibe Coding on Android.
+        </p>
+        <div class="cta-group">
+          <a href="#get-started" class="btn-primary">Get Started</a>
+          <a
+            href="https://github.com/nghidanh2005/phone-vibe-coding-windows"
+            class="btn-secondary"
+            >Star Repo</a
+          >
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <pre><code><span class="keyword">resource</span> <span class="string">"aws_instance"</span> <span class="string">"vibe_box"</span> {
+  <span class="attr">ami</span>           = <span class="var">data.aws_ami.windows.id</span>
+  <span class="attr">instance_type</span> = <span class="string">"t3.large"</span>
+  
+  <span class="comment"># Ready for Vibe Coding</span>
+  <span class="attr">tags</span> = {
+    Name = <span class="string">"VibeCoding-Windows"</span>
+  }
+}</code></pre>
+        </div>
+      </div>
+    </header>
+
+    <section id="features" class="features">
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Instant Deploy</h3>
+        <p>One command to provision a full Windows Server 2022 environment.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h3>Secure Core</h3>
+        <p>Dedicated VPC and RDP firewall rules to keep your workspace safe.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🛠️</div>
+        <h3>Tool Ready</h3>
+        <p>Pre-loaded with VS Code, Chrome, Git, and more via Chocolatey.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Phone Vibe Coding. Open Source under MIT License.</p>
+    </footer>
+  </body>
+</html>
